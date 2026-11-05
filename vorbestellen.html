@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Torte vorbestellen — Café La Dolce Gera</title>
+<meta name="description" content="Torte vorbestellen — Café La Dolce Gera, Patisserie & Kaffee in Gera. Hausgemachte Torten von Dariia & Nataliia.">
+<link rel="stylesheet" href="style.css"></head>
+<body><header class="site"><div class="header-in">
+<a class="logo" href="index.html"><span class="logo-mark">L</span><span><span class="logo-name" data-business-name>Café La Dolce Gera</span><br><span class="logo-sub">Patisserie &amp; Kaffee · Gera, Thüringen</span></span></a>
+<nav class="main"><a href="index.html">Startseite</a><a href="torten.html">Torten &amp; Menü</a><a href="reservierung.html">Reservieren &amp; Feiern</a><a href="ueber-uns.html">Über uns &amp; Kontakt</a></nav>
+<div class="header-cta"><a class="btn btn-outline btn-sm" href="reservierung.html">Tisch reservieren</a><a class="btn btn-cherry btn-sm" href="vorbestellen.html">Torte vorbestellen →</a></div>
+</div></header>
+<section class="section"><div class="wrap">
+<p><span class="demo-pill">[DEMO-SYSTEM — Preise als Platzhalter [PREIS] € · Vorlaufzeit &amp; Zeiten sind Demo-Annahmen]</span></p>
+<h1 style="margin:16px 0 12px">Torte online vorbestellen — <em>Schritt für Schritt</em> zu Ihrem handgefertigten Genuss</h1>
+<p class="lead">Frisch gebacken von Dariia &amp; Nataliia nach traditionellen Rezepturen. Wählen Sie Ihren Favoriten, personalisieren Sie Portionsgröße und Widmung, und sichern Sie sich Ihren Abhol-Slot im Café in Gera.</p>
+<p class="demo-note" style="margin-top:10px">Demo — so könnte die Vorbestellung aussehen. Es wird keine echte Bestellung ausgelöst, keine Zahlung verlangt und keine Daten gespeichert.</p>
+
+<div class="stepper" id="stepper">
+<div class="step-pill active" data-step="1"><span class="num">1</span><span>Torte wählen<small>10 Kreationen</small></span></div>
+<div class="step-pill" data-step="2"><span class="num">2</span><span>Anpassen<small>Größe &amp; Termin</small></span></div>
+<div class="step-pill" data-step="3"><span class="num">3</span><span>Abschluss<small>Bestell-Code</small></span></div>
+</div>
+
+<div class="flow-grid"><div>
+<form id="orderForm" novalidate>
+<!-- STEP 1 -->
+<div class="flow-card" data-pane="1">
+<h2 style="font-size:1.5rem">Schritt 1: Wählen Sie Ihre Torte</h2>
+<p style="margin:8px 0 18px">Alle 10 verifizierten Rezepturen werden am Abholtag frisch in Gera gebacken. <span class="tag">10 Sorten</span></p>
+<div class="cake-grid" id="cakeGrid"><button type="button" class="cake-tile" data-cake="schokotorte" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-schokotorte.webp" alt="Schokotorte" loading="lazy">
+<div class="body"><span class="tag">Hausrezept</span><h3>Schokotorte</h3><p>Dunkle Edelschokolade, samtige Creme & zarter Biskuit.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="cheesecake" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-cheesecake.webp" alt="Cheesecake New York" loading="lazy">
+<div class="body"><span class="tag">Klassiker</span><h3>Cheesecake New York</h3><p>Cremiger Frischkäse, feine Vanille & knuspriger Keksboden.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="schwarzwaelder" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-schwarzwaelder.webp" alt="Schwarzwälder Kirschtorte" loading="lazy">
+<div class="body"><span class="tag">Tradition modern</span><h3>Schwarzwälder Kirschtorte</h3><p>Klassiker mit saftigen Kirschen, Schoko & luftiger Sahne.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="milchmaedchen" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-milchmaedchen.webp" alt="Milchmädchen mit Himbeeren" loading="lazy">
+<div class="body"><span class="tag">Liebling der Gäste</span><h3>Milchmädchen mit Himbeeren</h3><p>Zarte Kondensmilchböden mit fruchtig-frischen Himbeeren.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="honigtorte" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-honigtorte.webp" alt="Honigtorte" loading="lazy">
+<div class="body"><span class="tag">Medovik</span><h3>Honigtorte</h3><p>Viele feine Honigschichten mit dezenter Sauerrahmcreme.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="redvelvet" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-redvelvet.webp" alt="Red Velvet" loading="lazy">
+<div class="body"><span class="tag">Festlich</span><h3>Red Velvet</h3><p>Samtroter Kakaobiskuit & samtiges Cream-Cheese-Frosting.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="vanille-apfel" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-vanille-apfel.webp" alt="Vanille-Apfel-Kuchen" loading="lazy">
+<div class="body"><span class="tag">Fruchtig & Fein</span><h3>Vanille-Apfel-Kuchen</h3><p>Aromatische Äpfel mit feiner Bourbon-Vanille & Zimtnote.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="napoleon" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-napoleon.webp" alt="Napoleon" loading="lazy">
+<div class="body"><span class="tag">Meisterstück</span><h3>Napoleon</h3><p>Blättriger Teig mit zartschmelzender Konditorcreme.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="schoko-himbeer" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-schoko-himbeer.webp" alt="Schoko-Himbeer-Torte" loading="lazy">
+<div class="body"><span class="tag">Frucht & Kakao</span><h3>Schoko-Himbeer-Torte</h3><p>Harmonie aus dunkler Schokolade und frischer Himbeere.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button><button type="button" class="cake-tile" data-cake="raffaello" aria-pressed="false">
+<span class="check">✓</span><img src="assets/img/torte-raffaello.webp" alt="Raffaello-Torte" loading="lazy">
+<div class="body"><span class="tag">Liebhaber-Spezialität</span><h3>Raffaello-Torte</h3><p>Feine Kokosflocken, weiße Schokolade & Mandelknusper.</p><p class="demo-note">Demo-Bild — KI-generiert</p><p><span class="price">[PREIS] €</span></p></div></button></div>
+<p style="margin-top:16px">Gewählt: <b id="chosenCake">Milchmädchen mit Himbeeren</b></p>
+<div class="flow-nav"><span></span><button type="button" class="btn btn-cherry" data-next="2">Weiter zu Schritt 2 →</button></div>
+</div>
+<!-- STEP 2 -->
+<div class="flow-card hidden" data-pane="2">
+<h2 style="font-size:1.5rem">Schritt 2: Personalisierung &amp; Abholung</h2>
+<p style="margin:8px 0 18px">Passen Sie Portionen, Beschriftung und Ihr Wunsch-Zeitfenster an.</p>
+<p style="font-weight:700;margin-bottom:10px">1. Portionsgröße wählen</p>
+<div class="radio-cards" id="sizeCards">
+<label class="radio-card selected"><input type="radio" name="size" value="12–14 Stücke (Ø 24 cm)" checked> <b>12–14 Stücke · Ø 24 cm</b><span>Beliebt · [PREIS] €</span></label>
+<label class="radio-card"><input type="radio" name="size" value="8–10 Stücke (Ø 20 cm)"> <b>8–10 Stücke · Ø 20 cm</b><span>[PREIS] €</span></label>
+<label class="radio-card"><input type="radio" name="size" value="16–20 Stücke (Ø 28 cm)"> <b>16–20 Stücke · Ø 28 cm</b><span>Große Feier · [PREIS] €</span></label>
+</div>
+<p style="font-weight:700;margin:22px 0 10px">2. Wunschaufschrift auf Tortenschild (optional)</p>
+<div class="field"><label for="cakeText">z. B. Marzipan- oder Schokoschild</label><input type="text" id="cakeText" placeholder="Alles Gute zum Geburtstag!"></div>
+<p style="font-weight:700;margin:22px 0 10px">3. Abholdatum</p>
+<div class="field"><input type="date" id="pickupDate" required><p class="hint">Abholung während der Öffnungszeiten <span class="ph">[Öffnungszeiten]</span>.</p></div>
+<p style="font-weight:700;margin:22px 0 10px">4. Zeitfenster</p>
+<div class="slot-grid" id="slotGrid">
+<button type="button" class="slot">10:00 – 12:00 Uhr (Vormittags)</button>
+<button type="button" class="slot">12:00 – 14:00 Uhr (Mittags)</button>
+<button type="button" class="slot selected">14:00 – 16:00 Uhr (Kaffeezeit)</button>
+<button type="button" class="slot">16:00 – 18:00 Uhr (Spätabholung)</button>
+</div>
+<p class="green-dot" style="margin-top:14px">● Noch freie Back-Kapazität (Demo)</p>
+<div class="summary" style="margin-top:18px"><h4>Ihre Auswahl</h4><dl>
+<dt>Torte</dt><dd id="sumCake">Milchmädchen mit Himbeeren</dd>
+<dt>Größe</dt><dd id="sumSize">12–14 Stücke (Ø 24 cm)</dd>
+<dt>Gesamtbetrag</dt><dd>[PREIS] €</dd></dl>
+<p class="demo-note" style="margin-top:8px">Inkl. Frischegarantie, Tortenkarton &amp; Schild · Richtwert-Platzhalter · Zahlung vor Ort oder vorab (Demo).</p></div>
+<div class="flow-nav"><button type="button" class="btn btn-outline" data-next="1">← Zurück</button><button type="button" class="btn btn-cherry" data-next="3">Weiter zu Kontaktdaten →</button></div>
+</div>
+<!-- STEP 3 -->
+<div class="flow-card hidden" data-pane="3">
+<h2 style="font-size:1.5rem">Schritt 3: Ihre Kontaktdaten &amp; Bestätigung</h2>
+<p style="margin:8px 0 18px">Fast fertig! Bitte hinterlassen Sie uns Ihre Kontaktdaten für die Abholung und Bestätigung.</p>
+<p style="font-weight:700;margin-bottom:10px">Ihre Daten</p>
+<div class="form-grid">
+<div class="field"><label for="oName">Vollständiger Name *</label><input type="text" id="oName" required autocomplete="name"></div>
+<div class="field"><label for="oPhone">Telefonnummer *</label><input type="tel" id="oPhone" required autocomplete="tel"></div>
+<div class="field full"><label for="oEmail">E-Mail-Adresse *</label><input type="email" id="oEmail" required autocomplete="email"></div>
+</div>
+<p style="font-weight:700;margin:18px 0 10px">Bestätigung per WhatsApp / E-Mail</p>
+<div class="toggle" id="confirmToggle"><button type="button" class="on" data-channel="WhatsApp">WhatsApp</button><button type="button" data-channel="E-Mail">E-Mail</button></div>
+<div class="summary" style="margin-top:18px"><h4>Ihre Vorbestellung im Überblick</h4><dl>
+<dt>Torte</dt><dd id="sumCake3">Milchmädchen mit Himbeeren</dd>
+<dt>Größe</dt><dd id="sumSize3">12–14 Stücke (Ø 24 cm)</dd>
+<dt>Abholdatum</dt><dd id="sumDate3">—</dd>
+<dt>Abholzeit</dt><dd id="sumTime3">14:00 – 16:00 Uhr</dd>
+<dt>Gesamtbetrag</dt><dd>[PREIS] €</dd></dl></div>
+<label class="checkline" style="margin-top:16px"><input type="checkbox" id="oPrivacy" required> <span>Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung dieser Vorbestellung zu. *</span></label>
+<p id="orderError" class="demo-note" style="color:var(--cherry);font-weight:700;margin-top:10px"></p>
+<div class="flow-nav"><button type="button" class="btn btn-outline" data-next="2">← Zurück</button><button type="submit" class="btn btn-cherry">Demo-Vorbestellung absenden</button></div>
+<p class="demo-note" style="margin-top:12px">Nach der Demo-Bestellung wird eine fiktive Bestellnummer erstellt und Ihre Demo-Daten werden NICHT gespeichert.</p>
+</div>
+</form>
+<!-- CONFIRMATION -->
+<div class="flow-card hidden" id="orderConfirmation">
+<div class="confirm">
+<div class="check-circle">✓</div>
+<p><span class="demo-pill">Bestell-Code aktiv</span> <span class="demo-note" id="confirmTime"></span></p>
+<p class="eyebrow" style="margin-top:16px">Ihr persönlicher Abhol-Code</p>
+<p class="code" id="orderCode">#LDG-2026-000</p>
+<p style="color:var(--gold);font-weight:700">Status: In Vorbereitung für die Backstube</p>
+<div class="summary" style="text-align:left;margin-top:18px"><dl>
+<dt>Gewählte Torte</dt><dd id="cCake">—</dd>
+<dt>Größe</dt><dd id="cSize">—</dd>
+<dt>Abholdatum</dt><dd id="cDate">—</dd>
+<dt>Abholzeitraum</dt><dd id="cTime">—</dd>
+<dt>Abholort</dt><dd>Gera · <span class="ph">[Adresse]</span></dd>
+<dt>Preis (Demo-Platzhalter)</dt><dd>[PREIS] €</dd></dl></div>
+<p class="okbar">✓ Bestätigung erfolgreich per <span id="cChannel">WhatsApp</span> an <span id="cContact">—</span> gesendet. (Demo — keine echte Nachricht wurde versendet.)</p>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><button class="btn btn-outline" id="orderRestart">↻ Neue Demo-Bestellung starten</button><a class="btn btn-gold" href="torten.html">Gesamtes Menü ansehen →</a></div>
+</div>
+</div>
+</div>
+<div><div class="phone" id="chatPhone">
+<div class="phone-head"><span class="ava">DL</span><span><b>Café La Dolce ✓</b><span>● Bestell-Assistent · Online</span></span></div>
+<div class="chat-body" id="chatBody">
+<div class="msg bot">Hallo! Möchten Sie eine Torte für Ihr Wochenende vorbestellen? Welcher Geschmack darf es sein?<time>10:14</time></div>
+</div>
+<div class="chips-row" id="chatChips">
+<button class="chip" data-chat="Ich möchte eine Torte für Samstag bestellen">Ich möchte eine Torte für Samstag bestellen</button>
+</div>
+<div class="chat-input"><input type="text" id="chatInput" placeholder="Antwort auswählen oder tippen..." aria-label="Nachricht an den Bestell-Assistenten"><button id="chatSend" aria-label="Senden">➤</button></div>
+</div>
+<p style="text-align:center;margin-top:12px"><button class="btn btn-outline btn-sm" id="chatReplay">↻ Chat-Demo neu abspielen</button>
+<a class="btn btn-cherry btn-sm" href="vorbestellen.html" style="margin-left:8px">💬 WhatsApp öffnen (Demo)</a></p>
+<p class="demo-note" style="text-align:center">Interaktiver WhatsApp-Bot für sekundenschnelle Kundenanfragen ohne Telefonunterbrechung in der Backstube. Demo — es wird keine echte Nachricht versendet.</p>
+<div class="card" style="margin-top:22px"><p class="eyebrow">Backstuben-Workflow im Fokus</p><h3 style="margin-top:8px">Was die Automatisierung für das Café tut</h3><p>Mehr Zeit für Teig, Tortenböden und herzlichen Gästekontakt vor Ort anstatt handschriftlicher Notizen und Telefonstress.</p></div>
+</div></div>
+
+<div class="grid4" style="margin-top:40px">
+<div class="card"><span class="icon">📋</span><h3>01 · Ordnung</h3><p><b>Kein Zettelchaos mehr.</b> Jede Vorbestellung landet sauber digital mit Tortensorte, Durchmesser, Wunschaufschrift und Telefonnummer direkt im Backstuben-Plan.</p><p class="green-dot">✓ Saubere, vollständige Übergabe</p></div>
+<div class="card"><span class="icon">⏱️</span><h3>02 · Kapazität</h3><p><b>Gedeckelte Abhol-Slots.</b> Intelligente Kapazitätsgrenzen verhindern eine Überlastung der Öfen. Sobald ein Samstag ausgebucht ist, schützt das System die Backstube vor Überlastung.</p><p class="green-dot">✓ Verlässliche Frischegarantie</p></div>
+<div class="card"><span class="icon">🔔</span><h3>03 · Verbindlichkeit</h3><p><b>24h Vorab-Erinnerung (Demo).</b> Kunden erhalten vor dem Termin automatisch ihren Code und die Öffnungszeiten per WhatsApp oder E-Mail. Keine vergessenen Torten.</p><p class="green-dot">✓ Weniger No-Shows</p></div>
+<div class="card"><span class="icon">😊</span><h3>04 · Fokus</h3><p><b>Freier Kopf für Dariia &amp; Nataliia.</b> Das Telefon klingelt nicht mehr während der Tortenglasur oder während des vollen Café-Betriebs. Handwerkliche Konzentration auf jeden einzelnen Biskuit.</p><p class="green-dot">✓ Höchste Genussqualität</p></div>
+</div>
+<p style="text-align:center;margin-top:28px"><span class="trust-chip">★ 5,0 auf Google (50 Bewertungen, laut eigener Website)</span></p>
+<p style="text-align:center;margin-top:12px"><a href="torten.html">Sortiment &amp; Menükarte durchstöbern →</a></p>
+</div></section>
+<footer class="site"><div class="wrap"><div class="foot-grid">
+<div><h4 data-business-name>Café La Dolce Gera</h4><p>Patisserie &amp; Kaffee · Gera</p><p>Handgefertigte Torten nach eigenen Rezepten, Kaffeespezialitäten &amp; Feiern in Gera. Geführt von Dariia &amp; Nataliia.</p><p style="margin-top:12px">★ 5,0 auf Google (50 Bewertungen, laut eigener Website)</p></div>
+<div><h4>Seiten</h4><ul><li><a href="index.html">Startseite</a></li><li><a href="vorbestellen.html">Torte vorbestellen</a></li><li><a href="torten.html">Torten &amp; Menü</a></li><li><a href="reservierung.html">Reservieren &amp; Feiern</a></li><li><a href="ueber-uns.html">Über uns &amp; Kontakt</a></li></ul></div>
+<div><h4>Kontakt &amp; Öffnungszeiten</h4><ul><li>📍 <span data-business-name>Café La Dolce Gera</span>, Gera, Thüringen<br><span class="ph">[Adresse]</span></li><li>🕐 <span class="ph">[Öffnungszeiten]</span></li><li>📞 <a href="tel:+491603268838">+49 160 3268838</a> · <a href="tel:+491604519326">+49 160 4519326</a></li><li>✉️ <a href="mailto:info.ladolcegera@gmail.com">info.ladolcegera@gmail.com</a></li></ul></div>
+</div><div class="foot-bottom"><span>© 2026 <span data-business-name>Café La Dolce Gera</span>. Alle Rechte vorbehalten. Liebevoll gebacken in Thüringen.</span><span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz (DSGVO)</a></span></div></div></footer><script src="app.js"></script></body></html>
